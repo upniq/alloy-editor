@@ -24211,7 +24211,7 @@ null},increment:function(a){this.getLast(a).inputs++},remove:function(a){a=this.
 		    lastRowIndex = startRow,
 		    totalRowSpan = 0,
 		    totalColSpan = 0,
-		   
+
 		// Use a documentFragment as buffer when appending cell contents.
 		frag = !isDetect && new CKEDITOR.dom.documentFragment(doc),
 		    dimension = 0;
@@ -28616,7 +28616,7 @@ CKEDITOR.tools.buildTableMap = function (table) {
         _onInputChange: function _onInputChange() {
             var reader = new FileReader();
             var inputEl = ReactDOM.findDOMNode(this.refs.fileInput);
-
+            var file = inputEl.files[0];
             reader.onload = (function (event) {
                 var editor = this.props.editor.get('nativeEditor');
 
@@ -28628,13 +28628,13 @@ CKEDITOR.tools.buildTableMap = function (table) {
 
                 var imageData = {
                     el: el,
-                    file: inputEl.files[0]
+                    file: file
                 };
 
                 editor.fire('imageAdd', imageData);
             }).bind(this);
 
-            reader.readAsDataURL(inputEl.files[0]);
+            reader.readAsDataURL(file);
 
             inputEl.value = '';
         }
