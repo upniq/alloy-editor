@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'alloyeditor-atlas';
-	src:url('fonts/alloyeditor-atlas.eot');
-	src:url('fonts/alloyeditor-atlas.eot?#iefix') format('embedded-opentype'),
-		url('fonts/alloyeditor-atlas.woff') format('woff'),
-		url('fonts/alloyeditor-atlas.ttf') format('truetype'),
-		url('fonts/alloyeditor-atlas.svg#alloyeditor-atlas') format('svg');
+	src:url('/assets/alloyeditor/dist/alloy-editor/assets/fonts/alloyeditor-atlas.eot');
+	src:url('/assets/alloyeditor/dist/alloy-editor/assets/fonts/alloyeditor-atlas.eot?#iefix') format('embedded-opentype'),
+		url('/assets/alloyeditor/dist/alloy-editor/assets/fonts/alloyeditor-atlas.woff') format('woff'),
+		url('/assets/alloyeditor/dist/alloy-editor/assets/fonts/alloyeditor-atlas.ttf') format('truetype'),
+		url('/assets/alloyeditor/dist/alloy-editor/assets/fonts/alloyeditor-atlas.svg#alloyeditor-atlas') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
