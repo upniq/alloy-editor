@@ -852,7 +852,7 @@ null},increment:function(a){this.getLast(a).inputs++},remove:function(a){a=this.
                     lang = 'en';
                 }
 
-                CKEDITOR.scriptLoader.load(AlloyEditor.getUrl('lang/alloy-editor/' + lang + '.js'), function (loaded) {
+                CKEDITOR.scriptLoader.load(AlloyEditor.getUrl('/assets/alloyeditor/dist/alloy-editor/lang/alloy-editor/' + lang + '.js'), function (loaded) {
                     if (loaded) {
                         AlloyEditor.fire('languageResourcesLoaded');
                     }
